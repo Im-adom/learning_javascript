@@ -1,0 +1,87 @@
+Exercise list
+1.	Write a program that determines whether a given number is positive or negative.
+Answer:
+const number = parseInt(prompt("Enter a number:"));
+
+if (number < 0){
+    console.log("This is a negative number.")
+}
+else if (number > 0){
+    console.log("This is a positive number.")
+}
+else {
+    console.log("The number is zero.")
+}
+2.	Write a program that checks if a number is even or odd.
+const number = parseInt(prompt("Enter a number:"));
+
+if (number % 2 == 0){
+    console.log("This is an even number.")
+}
+else {
+    console.log("This is an odd number.")
+}
+3.	Write a program to determine the greater of two numbers.
+const number1 = parseInt(prompt("Enter a first number:"));
+const number2 = parseInt(prompt("Enter a second number:"));
+
+if (number1 > number2){
+    console.log(`${number1} is greater than ${number2}`)
+}
+else {
+    console.log(`${number2} is greater than ${number1}`)
+}
+4.	Write a program that transforms a numerical grade to a letter grade (e.g grade 10 should display “A”).
+const mark = parseInt(prompt("Enter your mark:"));
+
+if (mark >= 80 && mark <= 100){
+    console.log("Your mark is a grade A")
+}
+else if (mark >= 60 && mark <= 79){
+    console.log("Your mark is a grade B")
+}
+else if (mark >= 50 && mark <= 69){
+    console.log("Your mark is a grade C")
+}
+else if (mark >= 40 && mark <= 59){
+    console.log("Your mark is a grade D")
+}
+else if (mark >= 30 && mark <= 49){
+    console.log("Your mark is a grade E")
+}
+else {
+    console.log("You had an F. You failed!")
+}
+5.	Write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
+const age = parseInt(prompt("Enter your age:"));
+
+if (age >= 0 && age < 12){
+    console.log("Your ticket price is 5")
+}
+else if (age >= 12 && age < 18){
+    console.log("Your ticket price is 10")
+}
+else if (age >= 18 && age < 60){
+    console.log("Your ticket price is 20")
+}
+
+else {
+    console.log("Your ticket price is 15")
+}
+6.	Write a program that determines if a year is a leap year.
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+const year = parseInt(prompt("Enter year:"));
+
+if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)){
+    console.log("It is a leap year")
+}
+else {
+    console.log("It is a normal year.")
+}
+
+7.	Write a program that calculates a discount based on the purchase amount. Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
+8.	Write a program that greets the user based on the time of day. Display good morning, good afternoon or good evening based on the time of day when you run the code.
+9.	Write a program that calculates the Body Mass Index (BMI) and categorizes it. The formula for BMI is: weight / (height * height).
+10.	Write a simple number guessing game. Provide a secret number and a guess. Based on those numbers give players clues if their guess is higher, lower or correct.
